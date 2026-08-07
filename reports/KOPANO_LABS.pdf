@@ -1,0 +1,151 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 7 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 1401 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+12 TL
+(KOPANO LABS x CARS4MARS AFRICAN ROVER CHALLENGE 2026) Tj
+T*
+(DFR-01 PUBLIC WEB COPY) Tj
+T*
+(Submitted baseline: 02 August 2026) Tj
+T*
+() Tj
+T*
+(CURRENT-STATE DECLARATION) Tj
+T*
+(DFR-01 is design-locked. Procurement, fabrication, integration and physical) Tj
+T*
+(testing are not complete. Planned components and diagrams are not test evidence.) Tj
+T*
+() Tj
+T*
+(REQUIREMENTS STATE) Tj
+T*
+(Drive: NO - no assembled rover exists.) Tj
+T*
+(Turn: NO - skid-steer architecture designed, not physically validated.) Tj
+T*
+(Battery operation: NO - 24 V 20 Ah LiFePO4 system selected, not procured/run.) Tj
+T*
+(Wireless control: NO - local Wi-Fi command path designed; range testing pending.) Tj
+T*
+(Live video: NO - RealSense D455 to Jetson RTSP/GStreamer path designed.) Tj
+T*
+(Payload transport: NO - 1 kg central tray designed, not fabricated/tested.) Tj
+T*
+() Tj
+T*
+(DESIGN BASELINE) Tj
+T*
+(Six Rhino IG52 24 V gearmotors; six 250 mm wheels; passive rocker-bogie.) Tj
+T*
+(Target envelope: 700 x 650 x 500 mm. BOM target: 28 kg.) Tj
+T*
+(Jetson Orin Nano Super for perception; Teensy 4.1 retains motor authority.) Tj
+T*
+(RealSense D455 + RPLIDAR A2M12; Wi-Fi command/video; LoRa fail-stop heartbeat.) Tj
+T*
+(24 V 20 Ah LiFePO4, BMS, 60 A fuse, contactor and emergency stop.) Tj
+T*
+() Tj
+T*
+(CONTROL INVARIANT) Tj
+T*
+(No LLM or cloud service is in the motor actuation loop.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 7 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 1353 >>
+stream
+BT
+/F1 10 Tf
+50 790 Td
+12 TL
+(KOPANO LABS x CARS4MARS - DFR-01 PUBLIC WEB COPY) Tj
+T*
+() Tj
+T*
+(OPEN BUILD STATE) Tj
+T*
+(Designed: LOCKED - DFR-01 submitted 02 Aug 2026.) Tj
+T*
+(Funded: PENDING EVIDENCE.) Tj
+T*
+(Ordered: NOT STARTED / NO ORDER EVIDENCE.) Tj
+T*
+(Assembled: NOT STARTED.) Tj
+T*
+(Tested: NOT STARTED.) Tj
+T*
+() Tj
+T*
+(NEXT VALIDATION GATES) Tj
+T*
+(Funding/orders -> frame, drive and protected power -> loaded drive/turn/E-stop.) Tj
+T*
+(Manual control + continuous onboard video -> one-take operator/rover evidence.) Tj
+T*
+(Payload, 30 cm bump, 45-degree ramp, range and object tests -> signed matrix.) Tj
+T*
+(Balloon sequence, autonomy, endurance and FMEA -> two sequences + 40-min run.) Tj
+T*
+() Tj
+T*
+(CONTROLLED R65,000 BUILD ALLOCATION) Tj
+T*
+(Drive/chassis R20,000 | Compute/control R11,000 | Vision R14,000) Tj
+T*
+(Power/safety R11,500 | Communications, spares and contingency R8,500) Tj
+T*
+() Tj
+T*
+(DISCLOSURE) Tj
+T*
+(Generative AI assisted source synthesis, language, software and labelled design) Tj
+T*
+(visualisation. Engineering claims change only through team-controlled evidence.) Tj
+T*
+() Tj
+T*
+(This web copy is a concise public rendering of the source DFR-01 facts.) Tj
+T*
+(The authoritative six-page source report is preserved in the Kopano Labs archive.) Tj
+T*
+(Mission control: https://kopanolabs.com/Cars4Mars/) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000001699 00000 n 
+0000001825 00000 n 
+0000003229 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3299
+%%EOF
