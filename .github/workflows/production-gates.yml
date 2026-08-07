@@ -16,18 +16,29 @@ jobs:
           set -euo pipefail
           test -s index.html
           test -s Cars4Mars/index.html
+          test -s Cars4Mars/Media/index.html
+          test -s Cars4Mars/Mission-Control/index.html
           test -s reports/KOPANO_LABS.pdf
           test -s robots.txt
           test -s sitemap.xml
           test -s release.json
-      - name: Validate evidence truth state
+      - name: Validate public campaign experience
         shell: bash
         run: |
           set -euo pipefail
-          grep -q 'PENDING EVIDENCE' Cars4Mars/index.html
-          grep -q 'NO ORDER EVIDENCE' Cars4Mars/index.html
-          grep -q 'NOT STARTED' Cars4Mars/index.html
-          grep -q 'CLOUD / LLM MOTOR AUTHORITY: NONE' Cars4Mars/index.html
+          grep -q 'FROM CAPE TOWN' Cars4Mars/index.html
+          grep -q 'Cars4Mars-Home-1024x576.png' Cars4Mars/index.html
+          grep -q 'three@0.180.0' Cars4Mars/index.html
+          grep -q '/Cars4Mars/Media/' Cars4Mars/index.html
+          grep -q '/Cars4Mars/Mission-Control/' Cars4Mars/index.html
+      - name: Validate technical truth state
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -q 'PENDING EVIDENCE' Cars4Mars/Mission-Control/index.html
+          grep -q 'NO ORDER EVIDENCE' Cars4Mars/Mission-Control/index.html
+          grep -q 'NOT STARTED' Cars4Mars/Mission-Control/index.html
+          grep -q 'e4217d365133385fdeea0effb4234d7d5991b06a' Cars4Mars/Mission-Control/index.html
       - name: Reject legacy zero-byte asset dependencies
         shell: bash
         run: |
@@ -40,3 +51,5 @@ jobs:
           head -c 8 reports/KOPANO_LABS.pdf | grep -q '%PDF-1.4'
           grep -q 'Allow: /' robots.txt
           grep -q 'https://kopanolabs.com/Cars4Mars/' sitemap.xml
+          grep -q 'https://kopanolabs.com/Cars4Mars/Media/' sitemap.xml
+          grep -q 'https://kopanolabs.com/Cars4Mars/Mission-Control/' sitemap.xml
