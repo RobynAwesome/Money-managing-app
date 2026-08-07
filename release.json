@@ -1,0 +1,13 @@
+{
+  "surface": "Kopano Labs + Cars4Mars clean rebuild",
+  "source_repository": "RobynAwesome/Money-managing-app",
+  "replacement_for": "RobynAwesome/cars4mars-landingpage",
+  "release_date": "2026-08-07",
+  "cars4mars_baseline": "DFR-01",
+  "designed": "LOCKED",
+  "funded": "PENDING_EVIDENCE",
+  "ordered": "NOT_STARTED",
+  "assembled": "NOT_STARTED",
+  "tested": "NOT_STARTED",
+  "asset_policy": "No zero-byte campaign asset dependency"
+}
