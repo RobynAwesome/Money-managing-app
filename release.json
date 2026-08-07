@@ -1,13 +1,10 @@
 {
-  "surface": "Kopano Labs + Cars4Mars clean rebuild",
+  "project": "Kopano Labs x Cars4Mars 2026",
   "source_repository": "RobynAwesome/Money-managing-app",
-  "replacement_for": "RobynAwesome/cars4mars-landingpage",
   "release_date": "2026-08-07",
-  "cars4mars_baseline": "DFR-01",
-  "designed": "LOCKED",
-  "funded": "PENDING_EVIDENCE",
-  "ordered": "NOT_STARTED",
-  "assembled": "NOT_STARTED",
-  "tested": "NOT_STARTED",
-  "asset_policy": "No zero-byte campaign asset dependency"
+  "design_baseline": "DFR-01",
+  "design_submitted": "2026-08-02",
+  "phase": "BUILD",
+  "next": "Procurement, frame, drive and protected power",
+  "mission_page": "https://kopanolabs.com/Cars4Mars/"
 }
