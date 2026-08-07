@@ -1,10 +1,18 @@
 {
   "project": "Kopano Labs x Cars4Mars 2026",
   "source_repository": "RobynAwesome/Money-managing-app",
+  "source_lineage": {
+    "foundation_repository": "RobynAwesome/cars4mars-landingpage",
+    "foundation_commit": "e4217d365133385fdeea0effb4234d7d5991b06a",
+    "foundation_role": "mission-control, campaign-media and DFR-01 content model",
+    "current_role": "cinematic campaign, interactive rover, media wall and preserved technical surface"
+  },
   "release_date": "2026-08-07",
   "design_baseline": "DFR-01",
   "design_submitted": "2026-08-02",
   "phase": "BUILD",
   "next": "Procurement, frame, drive and protected power",
-  "mission_page": "https://kopanolabs.com/Cars4Mars/"
+  "mission_page": "https://kopanolabs.com/Cars4Mars/",
+  "media_page": "https://kopanolabs.com/Cars4Mars/Media/",
+  "mission_control_page": "https://kopanolabs.com/Cars4Mars/Mission-Control/"
 }
