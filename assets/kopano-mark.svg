@@ -1,13 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Kopano Labs KL mark</title>
-  <desc id="desc">KL monogram on Karoo Night with the Kopano green-to-cyan identity gradient.</desc>
+  <title id="title">Kopano Labs network, arrow and leaf mark</title>
+  <desc id="desc">The Kopano Labs institutional symbol: connected nodes rising into an arrow with a leaf, in blue, cyan and green.</desc>
   <defs>
-    <linearGradient id="kopano-gradient" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#00ff88"/>
-      <stop offset="100%" stop-color="#00d4ff"/>
+    <linearGradient id="g" x1="70" y1="420" x2="420" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3155e7"/>
+      <stop offset=".48" stop-color="#138fc9"/>
+      <stop offset="1" stop-color="#31d49b"/>
     </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="512" height="512" rx="80" fill="#050508"/>
-  <rect x="18" y="18" width="476" height="476" rx="66" fill="none" stroke="url(#kopano-gradient)" stroke-opacity=".28" stroke-width="2"/>
-  <text x="256" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="200" font-weight="900" text-anchor="middle" fill="url(#kopano-gradient)">KL</text>
+  <rect width="512" height="512" rx="86" fill="#050508"/>
+  <g fill="none" stroke="url(#g)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M112 207 178 178 236 210 302 168 342 194"/>
+    <path d="M112 207 118 314 208 355 286 322 342 194"/>
+    <path d="M178 178 208 355M236 210 118 314M236 210 286 322M178 178 286 322M112 207 286 322" opacity=".88"/>
+    <path d="M286 322 354 231 414 171"/>
+    <path d="M344 116 430 92 412 181"/>
+    <path d="M414 171 344 116"/>
+  </g>
+  <g fill="url(#g)" filter="url(#glow)">
+    <circle cx="112" cy="207" r="22"/><circle cx="178" cy="178" r="22"/><circle cx="236" cy="210" r="20"/><circle cx="118" cy="314" r="23"/><circle cx="208" cy="355" r="24"/><circle cx="286" cy="322" r="22"/>
+    <path d="M292 279c38-52 82-45 105-39-9 38-32 73-92 74 21-17 44-37 65-59-26 15-53 27-78 24Z"/>
+  </g>
 </svg>
