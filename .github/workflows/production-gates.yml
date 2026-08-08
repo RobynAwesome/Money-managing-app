@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Validate required production files
         shell: bash
         run: |
@@ -22,15 +23,47 @@ jobs:
           test -s robots.txt
           test -s sitemap.xml
           test -s release.json
+
+      - name: Validate Kopano institutional identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s assets/kopano-logo.webp
+          test -s assets/kopano-mark.svg
+          test -s manifest.webmanifest
+          grep -q '/assets/kopano-logo.webp' index.html
+          grep -q '#0D1117' index.html
+          grep -q '#00E676' index.html
+          grep -q '#00D4FF' index.html
+          grep -q 'hero.*canvas\|id="network"' index.html
+          grep -q 'KOPANO' index.html
+
+      - name: Validate owned Cars4Mars identity pack
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s assets/cars4mars/campaign-hero.webp
+          test -s assets/cars4mars/founder-kholofelo.webp
+          test -s assets/cars4mars/founder-animated.webp
+          test -s assets/cars4mars/concept-art.webp
+          test -s assets/cars4mars/official-logo.webp
+          grep -q '/assets/cars4mars/campaign-hero.webp' Cars4Mars/index.html
+          grep -q '/assets/cars4mars/founder-kholofelo.webp' Cars4Mars/index.html
+          grep -q '/assets/kopano-logo.webp' Cars4Mars/index.html
+          grep -q '/assets/cars4mars/official-logo.webp' Cars4Mars/index.html
+          grep -q '/assets/cars4mars/concept-art.webp' Cars4Mars/index.html
+
       - name: Validate public campaign experience
         shell: bash
         run: |
           set -euo pipefail
           grep -q 'FROM CAPE TOWN' Cars4Mars/index.html
-          grep -q 'Cars4Mars-Home-1024x576.png' Cars4Mars/index.html
           grep -q 'three@0.180.0' Cars4Mars/index.html
+          grep -q 'Exploded' Cars4Mars/index.html
+          grep -q 'data-system="mobility"' Cars4Mars/index.html
           grep -q '/Cars4Mars/Media/' Cars4Mars/index.html
           grep -q '/Cars4Mars/Mission-Control/' Cars4Mars/index.html
+
       - name: Validate technical truth state
         shell: bash
         run: |
@@ -38,12 +71,15 @@ jobs:
           grep -q 'PENDING EVIDENCE' Cars4Mars/Mission-Control/index.html
           grep -q 'NO ORDER EVIDENCE' Cars4Mars/Mission-Control/index.html
           grep -q 'NOT STARTED' Cars4Mars/Mission-Control/index.html
+          grep -q 'CLOUD / LLM MOTOR AUTHORITY: NONE' Cars4Mars/Mission-Control/index.html
           grep -q 'e4217d365133385fdeea0effb4234d7d5991b06a' Cars4Mars/Mission-Control/index.html
+
       - name: Reject legacy zero-byte asset dependencies
         shell: bash
         run: |
           set -euo pipefail
           ! grep -R 'public/images/cars4mars' . --exclude-dir=.git
+
       - name: Validate PDF signature and indexing
         shell: bash
         run: |
