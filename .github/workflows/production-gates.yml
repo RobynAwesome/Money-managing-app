@@ -78,7 +78,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ! grep -R 'public/images/cars4mars' . --exclude-dir=.git
+          ! grep -R 'public/images/cars4mars' . --exclude-dir=.git --exclude=production-gates.yml
 
       - name: Validate PDF signature and indexing
         shell: bash
