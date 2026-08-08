@@ -1,0 +1,18 @@
+{
+  "name": "Kopano Labs — KintTech Hub",
+  "short_name": "Kopano Labs",
+  "description": "Sovereign product studio. Built in South Africa for the realities systems meet outside the lab.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#050508",
+  "theme_color": "#050508",
+  "icons": [
+    {
+      "src": "/assets/kopano-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
