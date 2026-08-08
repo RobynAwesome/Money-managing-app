@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Kopano Labs KL mark</title>
+  <desc id="desc">KL monogram on Karoo Night with the Kopano green-to-cyan identity gradient.</desc>
+  <defs>
+    <linearGradient id="kopano-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="80" fill="#050508"/>
+  <rect x="18" y="18" width="476" height="476" rx="66" fill="none" stroke="url(#kopano-gradient)" stroke-opacity=".28" stroke-width="2"/>
+  <text x="256" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="200" font-weight="900" text-anchor="middle" fill="url(#kopano-gradient)">KL</text>
+</svg>
